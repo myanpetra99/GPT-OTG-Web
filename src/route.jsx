@@ -5,7 +5,7 @@ import App from "./pages/app";
 
 function MainRouter() {
   return (
-    <Router>
+    <Router basename="/GPT-OTG-WEB">
       <Routes>
         <Route path="/thankyou" element={<App />} />
         <Route path="/" element={<Index />} />
