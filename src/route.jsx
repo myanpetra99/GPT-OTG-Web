@@ -7,8 +7,8 @@ function MainRouter() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Index/>} />
-        <Route path="/thankyou" element={<App/>} />
+        <Route path="/thankyou" element={<App />} />
+        <Route path="/" element={<Index />} />
       </Routes>
     </Router>
   );
