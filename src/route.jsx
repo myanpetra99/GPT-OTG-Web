@@ -1,16 +1,16 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/index";
 import App from "./pages/app";
 
 function MainRouter() {
   return (
-    <Router basename="/GPT-OTG-WEB">
+    <HashRouter base="/">
       <Routes>
         <Route path="/thankyou" element={<App />} />
         <Route path="/" element={<Index />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
