@@ -1,22 +1,35 @@
-
-import '../styles/App.css'
+import '../styles/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import Navbar from '../components/navbar';  // import Navbar
 
 function App() {
   return (
     <>
+      <Navbar /> 
+      <div className  ='container'>
       <h1 className='brand title-hero'>GPT-OTG</h1>
       <p className="sub">
-        Ask the AI anywhere and anytime. <br />
+        Your AI browsing companion<br />
       </p>
       <div className="card">
-        <a href='https://github.com/myanpetra99/gpt-otg/releases/latest/download/gpt-otg.crx'><button> Download The Extension<FontAwesomeIcon icon={faDownload} /></button></a>
-        <a href='https://github.com/myanpetra99/GPT-OTG'><button> Github  <FontAwesomeIcon icon={faGithub} /> </button></a>
+        <a href='https://chrome.google.com/webstore/detail/gpt-otg-development-build/fmibenbpkickilfocjdghokdnkmolhfi?hl=en&authuser=0'>
+          <button className='button'>
+            Download The Extension (BETA)
+            <FontAwesomeIcon icon={faDownload} />
+          </button>
+        </a>
+        <a href='https://github.com/myanpetra99/GPT-OTG'>
+          <button className='button'>
+            Github  
+            <FontAwesomeIcon icon={faGithub} />
+          </button>
+        </a>
+      </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
